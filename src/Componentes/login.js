@@ -30,12 +30,12 @@ export const Login = () => {
       
       
         <select className="menuselector2">
-        <option value="rigatoni">Cedula</option>
-        <option value="dave">Tarjeta Identidad</option>
-        <option value="pumpernickel">Cedula Extranjeria</option>
+        <option value="rigatoni">CEDULA</option>
+        <option value="dave">TARJETA DE Identidad</option>
+        <option value="pumpernickel">CEDULA DE EXTRANJERIA(CE)</option>
         <option value="reeses">NUMERO DE IDENTIFICACION PERSONAL(NIP)</option>
         <option value="reeses">NUMERO DE IDENTIFICACION TRIBUTARIA(NIP)</option>
-        <option value="reeses">Pasaporte</option>
+        <option value="reeses">PASAPORTE</option>
         </select>
         
       </header>
