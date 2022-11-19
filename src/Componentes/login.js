@@ -33,7 +33,7 @@ export const Login = () => {
         <option value="rigatoni">Cedula</option>
         <option value="dave">Tarjeta Identidad</option>
         <option value="pumpernickel">Cedula Extranjeria</option>
-        <option value="reeses">Pasaporte</option>
+        <option value="reeses">NIT</option>
         </select>
         
       </header>
