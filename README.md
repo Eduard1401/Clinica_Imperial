@@ -21,3 +21,4 @@
 
 
 ## Pantalla Principal - Logueado
+![image](https://user-images.githubusercontent.com/118573715/202831494-818b856b-8b0e-4d0b-85f1-44c72a4494dd.png)
