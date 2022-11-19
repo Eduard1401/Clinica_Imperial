@@ -15,10 +15,13 @@
 
 
 
-## Registrase
+## Registrarse
 
+![image](https://user-images.githubusercontent.com/92444222/202832636-bfd75db1-93d9-4890-b1b1-0737c040a447.png)
 
 ## Olvido de contraseña
+
+![image](https://user-images.githubusercontent.com/92444222/202832671-6aa7ebca-f994-4761-8d30-7725ae35de54.png)
 
 
 ## Pantalla Principal - Logueado
