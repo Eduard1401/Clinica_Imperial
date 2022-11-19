@@ -33,8 +33,8 @@ export const Login = () => {
         <option value="rigatoni">Cedula</option>
         <option value="dave">Tarjeta Identidad</option>
         <option value="pumpernickel">Cedula Extranjeria</option>
-        <option value="reeses">NIT</option>
-        <option value="reeses">NIP</option>
+        <option value="reeses">NUMERO DE IDENTIFICACION PERSONAL(NIP)</option>
+        <option value="reeses">NUMERO DE IDENTIFICACION TRIBUTARIA(NIP)</option>
         <option value="reeses">Pasaporte</option>
         </select>
         
