@@ -7,7 +7,7 @@
 # Clinica Imperial - Pantallas Realizadas
 
 ## Pantalla Principal
-![image](https://user-images.githubusercontent.com/118573715/202831357-ea051215-1859-4f66-9244-09872d41eec0.png)
+![image](https://user-images.githubusercontent.com/118573715/203182811-d6d0bf53-65c2-4e9f-a5aa-cb2dd2773a3b.png)
 
 
 ## Login
