@@ -1,0 +1,117 @@
+header{
+  display: flex;
+  justify-content:center;
+}
+
+.encabezado{
+ display: flex;
+  align-items: center;
+}
+
+.encabezado img{
+  margin-left: 10px;
+}
+
+.cuadro{
+  border: 3px solid #2B9FC9;
+  margin-left: 475px;
+  margin-right: 425px;
+  height: 710px;
+}
+
+.cuadro header{
+  background: #2B9FC9;
+  height: 30px;
+  color: white;
+ 
+  font-family: sans-serif;
+  font-size: calc(3px + 2vmin);
+  font-weight: 600;
+}
+.cuadro header text{
+  margin-top: 5px;
+}
+.Insesion{
+  margin-left: 50px; 
+  margin-top: 30px;
+  color: #2686BD;
+  font-size: calc(4px + 3vmin);
+}
+
+.TipoDocumento{
+  margin-left: 50px; 
+  margin-top: 30px;
+}
+
+.menutipodocumento{
+  width: 325px;
+  height: 30px;
+}
+.numerodocumento{
+  margin-left: 50px; 
+  margin-top: 30px;
+}
+
+.labelnumerodocumento{
+  width: 320px;
+  height: 23px;
+}
+.recordardatos{
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.textoverificarcaptcha{
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.verificarcaptcha{
+  background: #d8dadb;
+  width: 325px;
+  height: 60px;
+  margin-left: 2px;
+  margin-right: 50px; 
+}
+
+.verificarcaptcha input{
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.verificarcaptcha h5{
+  margin-top: -23px;
+  margin-left: 60px;
+}
+
+.imagencaptcha{
+  margin-top: -55px;
+  margin-left: 230px;
+} 
+.boton4 {
+  
+  width: 325px;
+  height: 40px;
+  margin-left: 60px;
+  border-radius: 15px;
+  margin-top: 500px;
+  background: #2686BD;
+  mix-blend-mode: normal;
+  border:#ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+  color: white;
+  font-family: 'Arial';
+  font-style: normal;
+      
+  } 
+.olvide{
+  margin-top: 100px;
+  margin-left: 130px;
+}
+.Registrate{
+  margin-top: 20px;
+  margin-left: 170px;
+}
