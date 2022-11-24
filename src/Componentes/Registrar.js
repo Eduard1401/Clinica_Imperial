@@ -2,6 +2,8 @@ import React from 'react'
 import LogoClinica from '../Imagenes/logo-clinica.png'
 import captcha from '../Imagenes/captcha.png'
 import NombreClinica from '../Imagenes/nombre-clinica.png'
+import '../login.css';
+
 
 export const Registrar = () => {
   return (

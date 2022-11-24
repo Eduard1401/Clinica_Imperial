@@ -21,6 +21,8 @@ export const Inicio = () => {
 }
 const handleNext = (e) => {navigate('/Login')}
 const handlesi = (e) => {navigate('/Registrar')}
+const handinicio = (e) => {navigate('/')}
+
   return (
     <body>
       <header>
@@ -35,10 +37,10 @@ const handlesi = (e) => {navigate('/Registrar')}
       </header>
       <nav>
         <ul className='navegacion'>
-          <li><a href={Inicio}>Inicio</a></li>
-          <li><a href={Inicio}>Red de Atención</a></li>
-          <li><a href={Inicio}>Afiliados</a></li>
-          <li><a href={Inicio}>Contactanos</a></li>
+          <li><a href={Inicio} onClick={handinicio}>Inicio</a></li>
+          <li><a href={Inicio} onClick={handleNext}>Red de Atención</a></li>
+          <li><a href={Inicio} onClick={handleNext}>Afiliados</a></li>
+          <li><a href={Inicio} onClick={handlesi}>Contactanos</a></li>
         </ul>   
       </nav>
       <article className='imagen'>
@@ -51,19 +53,19 @@ const handlesi = (e) => {navigate('/Registrar')}
       <div className='especialidad'>
         <button>
           <div>
-            <img src={ordenes} alt='' />
+            <img src={ordenes} alt='' onClick={handleNext} />
           </div>
           Órdenes médicas
         </button>
         <button>
           <div>
-            <img src={citas} alt='' />
+            <img src={citas} alt='' onClick={handleNext}/>
           </div>
           Citas
         </button>
         <button>
           <div>
-            <img src={pagos} alt='' />
+            <img src={pagos} alt='' onClick={handleNext}/>
           </div>
           Pagos
         </button>
@@ -71,19 +73,19 @@ const handlesi = (e) => {navigate('/Registrar')}
       <div className='especialidad1'>
         <button>
           <div>
-            <img src={historia} alt='' />
+            <img src={historia} alt='' onClick={handleNext}/>
           </div>
           Historia Clínica
         </button>
         <button>
           <div>
-            <img src={laboratorio} alt='' />
+            <img src={laboratorio} alt='' onClick={handleNext} />
           </div>
           Laboratorio
         </button>
         <button>
           <div>
-            <img src={afiliaciones} alt='' />
+            <img src={afiliaciones} alt='' onClick={handleNext}/>
           </div>
           Afiliación
         </button>
