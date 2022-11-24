@@ -2,9 +2,27 @@ import React from 'react'
 import logo_clinica from '../Imagenes/logo_clinica.png'
 import nombre_clinica from '../Imagenes/nombre_clinica.png'
 import { Inicio } from './Inicio'
+import '../Afiliacion.css';
+
+import { useNavigate } from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 
 export const Afiliacion = () => {
+
+  const navigate = useNavigate();
+  const location = {
+    pathname: '/Login'
+}
+const handleNext = (e) => {navigate('/Login')}
+const handlesi = (e) => {navigate('/Registrar')}
+const handafilia = (e) => {navigate('/Afiliacion')}
+const handinicio = (e) => {navigate('/Logueado')}
+const handOrdenes = (e) => {navigate('/Ordenes')}
+const handPagos = (e) => {navigate('/Pagos')}
+const handLaboratorio = (e) => {navigate('/Laboratorio')}
+const handCitas_medicas = (e) => {navigate('/Citas_medicas')}
+
   return (
     <body>
       <header className='usuario'>
@@ -22,10 +40,10 @@ export const Afiliacion = () => {
       </header>
       <nav>
         <ul className='navegacion'>
-          <li><a href={Inicio}>Inicio</a></li>
-          <li><a href={Inicio}>Red de Atención</a></li>
-          <li><a href={Inicio}>Afiliados</a></li>
-          <li><a href={Inicio}>Contactanos</a></li>
+          <li><a href={Inicio} onClick={handinicio}>Inicio</a></li>
+          <li><a href={Inicio} onClick={handinicio}>Red de Atención</a></li>
+          <li><a href={Inicio} onClick={handafilia}>Afiliados</a></li>
+          <li><a href={Inicio} onClick={handinicio}>Contactanos</a></li>
         </ul>   
       </nav>
       <div className='servicios'>

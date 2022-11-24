@@ -9,9 +9,25 @@ import laboratorio from '../Imagenes/laboratorio.png'
 import pagos from '../Imagenes/pagos.png'
 import afiliaciones from '../Imagenes/afiliaciones.png'
 import { Inicio } from './Inicio'
-
+import { useNavigate } from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 export const Logueado = () => {
+
+  const navigate = useNavigate();
+  const location = {
+    pathname: '/Login'
+}
+const handleNext = (e) => {navigate('/Login')}
+const handlesi = (e) => {navigate('/Registrar')}
+const handafilia = (e) => {navigate('/Afiliacion')}
+const handinicio = (e) => {navigate('/Logueado')}
+const handOrdenes = (e) => {navigate('/Ordenes')}
+const handPagos = (e) => {navigate('/Pagos')}
+const handLaboratorio = (e) => {navigate('/Laboratorio')}
+const handCitas_medicas = (e) => {navigate('/Citas_medicas')}
+
+
   return (
     <body>
       <header className='usuario'>
@@ -29,10 +45,10 @@ export const Logueado = () => {
       </header>
       <nav>
         <ul className='navegacion'>
-          <li><a href={Inicio}>Inicio</a></li>
-          <li><a href={Inicio}>Red de Atención</a></li>
-          <li><a href={Inicio}>Afiliados</a></li>
-          <li><a href={Inicio}>Contactanos</a></li>
+          <li><a href={Inicio} onClick={handinicio}>Inicio</a></li>
+          <li><a href={Inicio} onClick={handinicio}>Red de Atención</a></li>
+          <li><a href={Inicio} onClick={handafilia}>Afiliados</a></li>
+          <li><a href={Inicio} onClick={handinicio}>Contactanos</a></li>
         </ul>   
       </nav>
       <article className='imagen'>
@@ -43,19 +59,19 @@ export const Logueado = () => {
         <text>Servicios Destacados</text>
       </div>
       <div className='especialidad'>
-        <button>
+        <button onClick={handOrdenes}>
           <div>
             <img src={ordenes} alt='' />
           </div>
           Órdenes médicas
         </button>
-        <button>
+        <button onClick={handCitas_medicas}>
           <div>
             <img src={citas} alt='' />
           </div>
           Citas
-        </button>
-        <button>
+        </button> 
+        <button onClick={handPagos}>
           <div>
             <img src={pagos} alt='' />
           </div>
@@ -63,19 +79,19 @@ export const Logueado = () => {
         </button>
       </div>
       <div className='especialidad1'>
-        <button>
+        <button onClick={handafilia}>
           <div>
             <img src={historia} alt='' />
           </div>
           Historia Clínica
         </button>
-        <button>
+        <button onClick={handLaboratorio}>
           <div>
             <img src={laboratorio} alt='' />
           </div>
           Laboratorio
         </button>
-        <button>
+        <button onClick={handafilia}>
           <div>
             <img src={afiliaciones} alt='' />
           </div>
