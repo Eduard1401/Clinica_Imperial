@@ -31,8 +31,6 @@ function App() {
             <Route path="/Pagos" element={<Pagos />}/>
             <Route path="/Laboratorio" element={<Laboratorio />}/>
             <Route path="/Citas_medicas" element={<Citas_medicas />}/>
-            <Route path="/Citas_medicas" element={<Citas_medicas />}/>
-            <Route path="/Citas_medicas" element={<Citas_medicas />}/>
           </Routes>
         </Router>
 
