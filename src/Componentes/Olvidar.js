@@ -2,9 +2,22 @@ import React from 'react'
 import LogoClinica from '../Imagenes/logo-clinica.png'
 import captcha from '../Imagenes/captcha.png'
 import NombreClinica from '../Imagenes/nombre-clinica.png'
+import { useNavigate } from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 
 export const Olvidar = () => {
+
+  const navigate = useNavigate();
+  const location = {
+    pathname: '/Login'
+}
+const handleNext = (e) => {navigate('/Logueado')}
+const handlesi = (e) => {navigate('/Olvidar')}
+const handiinicio = (e) => {navigate('/')}
+
   return (
+    
     <div className="App">
       <header className="logo-clinica">
        <img src={LogoClinica} alt="logo-clinica" className='img-home' />
@@ -55,8 +68,8 @@ export const Olvidar = () => {
       <label className="labelnorobot" for="activar">No soy un Robot</label>
       <img className="imgcaptcha" src={captcha} alt="captcha"  />
       </header>
-      <button className="boton36">Iniciar sesión</button>
-      <label className="labelolvidecontrass"for="activar">Regresar</label>
+      <button className="boton36" onClick={handleNext}>Iniciar sesión</button>
+      <label className="labelolvidecontrass"for="activar" onClick={handiinicio}>Regresar</label>
     </div>
   )
 }

@@ -3,9 +3,18 @@ import LogoClinica from '../Imagenes/logo_clinica.png'
 import NombreClinica from '../Imagenes/nombre_clinica.png'
 import captcha from '../Imagenes/captcha.png'
 import '../login.css';
-
+import { useNavigate } from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 export const Login = () => {
+
+  const navigate = useNavigate();
+  const location = {
+    pathname: '/Login'
+}
+const handleNext = (e) => {navigate('/Logueado')}
+const handlesi = (e) => {navigate('/Olvidar')}
+const handiregis = (e) => {navigate('/Registrar')}
 
   return (
     <body>
@@ -56,13 +65,13 @@ export const Login = () => {
         
         </div>
         <div>
-          <button className="boton4">Iniciar sesión</button>
+          <button className="boton4" onClick={handleNext}>Iniciar sesión</button>
         </div>
-        <div className="olvide">
-          <a  href='#'>Olvide mi contraseña</a>
+        <div className="olvide" >
+          <a  href='#' onClick={handlesi}>Olvide mi contraseña</a>
         </div>
         <div className="Registrate">
-          <a  href='#'>Registrarse</a>
+          <a  href='#' onClick={handiregis}>Registrarse</a>
         </div>
       </div>
     </body>
