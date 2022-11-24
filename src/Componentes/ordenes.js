@@ -2,6 +2,8 @@ import React from 'react'
 import logo_clinica from '../Imagenes/logo_clinica.png'
 import nombre_clinica from '../Imagenes/nombre_clinica.png'
 import { Inicio } from './Inicio'
+import '../ordenes.css';
+
 
 
 export const Ordenes = () => {

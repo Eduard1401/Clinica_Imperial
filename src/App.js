@@ -1,7 +1,7 @@
 
 //import './App.css';
-import './logueado.css';
-import './login.css';
+//import './logueado.css';
+//import './login.css';
 import { Inicio } from './Componentes/Inicio';
 import { Olvidar } from './Componentes/Olvidar';
 import { Login } from './Componentes/login';

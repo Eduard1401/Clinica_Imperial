@@ -8,9 +8,19 @@ import historia from '../Imagenes/historia.png'
 import laboratorio from '../Imagenes/laboratorio.png'
 import pagos from '../Imagenes/pagos.png'
 import afiliaciones from '../Imagenes/afiliaciones.png'
+import '../Inicio.css';
+import { useNavigate } from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 
 
 export const Inicio = () => {
+  const navigate = useNavigate();
+  const location = {
+    pathname: '/Login'
+}
+const handleNext = (e) => {navigate('/Login')}
+const handlesi = (e) => {navigate('/Registrar')}
   return (
     <body>
       <header>
@@ -19,8 +29,8 @@ export const Inicio = () => {
             <img src={nombre_clinica} alt='nombre clinica' width="140px" height="55px" />
         </div>
         <div className='botones'>
-          <button>Oficina virtual afiliados</button>
-          <button>Registrate afiliado</button>
+          <button onClick={handleNext}>Oficina virtual afiliados</button>
+          <button  onClick={handlesi}>Registrate afiliado</button>
         </div>
       </header>
       <nav>
