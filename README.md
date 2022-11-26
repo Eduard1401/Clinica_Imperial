@@ -42,4 +42,7 @@
 ##Citas Medicas
 ![image](https://user-images.githubusercontent.com/118573914/204108533-9712f7a8-9e6b-4c59-bc98-29fa16219dbf.png)
 
+## Laboratorio
+![image](https://user-images.githubusercontent.com/118573715/204108660-52d61309-f2bf-472e-a196-7e08aa15d46b.png)
+
 
