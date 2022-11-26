@@ -25,4 +25,17 @@
 
 
 ## Pantalla Principal - Logueado
-![image](https://user-images.githubusercontent.com/118573715/202831494-818b856b-8b0e-4d0b-85f1-44c72a4494dd.png)
+![image](https://user-images.githubusercontent.com/118573715/204108207-bd94e35d-50f6-44fc-85f4-ec62f1f01396.png)
+
+
+## Pagos
+![image](https://user-images.githubusercontent.com/118573715/204108258-90db908f-f278-44ac-9f9e-a643c8c6a706.png)
+
+
+## Órdenes
+![image](https://user-images.githubusercontent.com/118573715/204108280-6b47f446-9f7c-4bad-abc5-197d0666a136.png)
+
+
+## Afiliación
+![image](https://user-images.githubusercontent.com/118573715/204108298-12dcbf74-4211-43cb-8550-3483cd690d39.png)
+
