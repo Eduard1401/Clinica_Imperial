@@ -1,17 +1,29 @@
 import React from 'react'
 import logo_clinica from '../Imagenes/logo_clinica.png'
-import nombre_clinica1 from '../Imagenes/NOMBRE-CLINI.png'
+import nombre_clinica1 from '../Imagenes/nombre_clinica.png'
 import captcha from '../Imagenes/captcha.png'
 import '../Olvidar.css'
+import { useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 export const Olvidar = () => {
+
+  const navigate = useNavigate();
+  const location = {
+    pathname: '/Login'
+  }
+  const handleNext = (e) => { navigate('/Logueado') }
+  const handlesi = (e) => { navigate('/Olvidar') }
+  const handiinicio = (e) => { navigate('/') }
+  const handilogin = (e) => { navigate('/Login') }
+
 
   return (
     <body>
       <header>
         <div className='encabezado'>
-        <img className='logo' src={logo_clinica} alt='logo clinica'/>
-        <img className='nombre' src={nombre_clinica1} alt='nombre clinica'/>
+          <img className='logo' src={logo_clinica} alt='logo clinica' onClick={handiinicio}/>
+          <img className='nombre' src={nombre_clinica1} alt='nombre clinica' onClick={handiinicio}/>
         </div>
       </header>
       <center>
@@ -19,7 +31,7 @@ export const Olvidar = () => {
           <header>
             <text>OFICINA VIRTUAL</text>
           </header>
-          <div  className='Insesion'>
+          <div className='Insesion'>
             Olvide mi contraseña
           </div>
           <div className='texto1'>
@@ -36,37 +48,37 @@ export const Olvidar = () => {
               <option value="reeses">Pasaporte</option>
             </select>
           </div>
-          <div  className='numerodocumento'>
+          <div className='numerodocumento'>
             <text>Numero de documento: *</text>
           </div>
           <div>
             <input className="labelnumerodocumento" type="text" id="Name" name="Name" />
-          </div>  
+          </div>
           <div className="textoverificarcaptcha">
-              <text>Verificar captcha: *</text>
-            </div>        
+            <text>Verificar captcha: *</text>
+          </div>
           <div >
             <div className='verificarcaptcha'>
               <div className="cuadritocaptcha">
-              <input  type="checkbox" id= "activar"/>
+                <input type="checkbox" id="activar" />
               </div>
               <div className='verificarcaptcha1'>
-              <text>No soy un robot</text>
+                <text>No soy un robot</text>
               </div>
               <div className="imagencaptcha">
-              <img  src={captcha} alt='captcha' />
+                <img src={captcha} alt='captcha' />
               </div>
             </div>
           </div>
-          
+
           <div>
-            <button className="boton4">Restablecer</button>
+            <button className="boton4" onClick={handleNext}>Restablecer</button>
           </div>
           <div className="olvide">
-            <a  href='#'>Regresar</a>
+            <a href='#' onClick={handilogin}>Regresar</a>
           </div>
-         
-          
+
+
         </div>
       </center>
 

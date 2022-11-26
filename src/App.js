@@ -6,7 +6,7 @@ import { Inicio } from './Componentes/Inicio';
 import { Olvidar } from './Componentes/Olvidar';
 import { Login } from './Componentes/login';
 import { Logueado } from './Componentes/Logueado';
-import { Registrar } from './Componentes/Registrar';
+import { Registrate } from './Componentes/Registrate';
 import { Afiliacion } from './Componentes/Afiliacion';
 import { Ordenes } from './Componentes/ordenes';
 import { Pagos } from './Componentes/pagos';
@@ -25,7 +25,7 @@ function App() {
             <Route path="/Login" element={<Login />}/>
             <Route path="/Olvidar" element={<Olvidar />}/>
             <Route path="/Logueado" element={<Logueado />}/>
-            <Route path="/Registrar" element={<Registrar />}/>
+            <Route path="/Registrate" element={<Registrate />}/>
             <Route path="/Afiliacion" element={<Afiliacion />}/>
             <Route path="/Ordenes" element={<Ordenes />}/>
             <Route path="/Pagos" element={<Pagos />}/>

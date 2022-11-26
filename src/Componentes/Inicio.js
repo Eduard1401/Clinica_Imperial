@@ -9,30 +9,41 @@ import laboratorio from '../Imagenes/laboratorio.png'
 import pagos from '../Imagenes/pagos.png'
 import afiliaciones from '../Imagenes/afiliaciones.png'
 import '../Inicio.css';
+import { useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 export const Inicio = () => {
+
+  const navigate = useNavigate();
+  const location = {
+    pathname: '/Login'
+  }
+  const handleNext = (e) => { navigate('/Login') }
+  const handlesi = (e) => { navigate('/Registrate') }
+  const handinicio = (e) => { navigate('/') }
+
   return (
     <body>
       <header>
         <div className='encabezado'>
-          <img className='logo' src={logo_clinica} alt='logo clinica'/>
-          <img className='nombre' src={nombre_clinica} alt='nombre clinica'/>
+          <img className='logo' src={logo_clinica} alt='logo clinica' />
+          <img className='nombre' src={nombre_clinica} alt='nombre clinica' />
         </div>
         <div className='botones'>
-          <button>Oficina virtual afiliados</button>
-          <button>Registrate afiliado</button>
+          <button onClick={handleNext}>Oficina virtual afiliados</button>
+          <button onClick={handlesi}>Registrate afiliado</button>
         </div>
       </header>
       <nav>
         <ul className='navegacion'>
-          <li><a href={Inicio}>Inicio</a></li>
-          <li><a href={Inicio}>Red de Atención</a></li>
-          <li><a href={Inicio}>Afiliados</a></li>
-          <li><a href={Inicio}>Contactanos</a></li>
-        </ul>   
+          <li><a href={Inicio} onClick={handinicio}>Inicio</a></li>
+          <li><a href={Inicio} onClick={handleNext}> Red de Atención</a></li>
+          <li><a href={Inicio} onClick={handleNext}>Afiliados</a></li>
+          <li><a href={Inicio} onClick={handlesi}>Contactanos</a></li>
+        </ul>
       </nav>
       <article className='imagen'>
-        <img src={medicos} alt='' />
+        <img src={medicos} alt='' onClick={handleNext}/>
       </article>
       <nav className='barra'></nav>
       <div className='servicios'>
@@ -41,19 +52,19 @@ export const Inicio = () => {
       <div className='especialidad'>
         <button>
           <div>
-            <img src={ordenes} alt='' />
+            <img src={ordenes} alt='' onClick={handleNext}/>
           </div>
           Órdenes médicas
         </button>
         <button>
           <div>
-            <img src={citas} alt='' />
+            <img src={citas} alt='' onClick={handleNext}/>
           </div>
           Citas
         </button>
         <button>
           <div>
-            <img src={pagos} alt='' />
+            <img src={pagos} alt='' onClick={handleNext}/>
           </div>
           Pagos
         </button>
@@ -61,19 +72,19 @@ export const Inicio = () => {
       <div className='especialidad1'>
         <button>
           <div>
-            <img src={historia} alt='' />
+            <img src={historia} alt='' onClick={handleNext}/>
           </div>
           Historia Clínica
         </button>
         <button>
           <div>
-            <img src={laboratorio} alt='' />
+            <img src={laboratorio} alt='' onClick={handleNext}/>
           </div>
           Laboratorio
         </button>
         <button>
           <div>
-            <img src={afiliaciones} alt='' />
+            <img src={afiliaciones} alt='' onClick={handleNext}/>
           </div>
           Afiliación
         </button>
@@ -81,8 +92,8 @@ export const Inicio = () => {
       <footer>
         <div className='fin'>
           <div className='clinica'>
-            <img className='logo1' src={logo_clinica} alt='logo clinica'/>
-            <img className='nombre1' src={nombre_clinica} alt='nombre clinica'/>
+            <img className='logo1' src={logo_clinica} alt='logo clinica' />
+            <img className='nombre1' src={nombre_clinica} alt='nombre clinica' />
           </div>
           <div><text className='oficina2'>Oficina Virtual</text></div>
           <div>
