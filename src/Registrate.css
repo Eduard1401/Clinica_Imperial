@@ -1,0 +1,494 @@
+header{
+    display: flex;
+    justify-content:center;
+    
+  }
+  
+  .encabezado{
+   display: flex;
+    align-items: center;
+    justify-content:center; 
+  }
+  
+  .logo{
+    width: 60px;
+    margin-left: 10px;
+  }
+
+  .nombre{
+    width: 176px;
+    height: 55px;
+    margin-top: 5px;
+  }
+  
+  .cuadro{
+    border: 3px solid #2B9FC9;
+    height: auto;
+    width: 450px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .cuadro header{
+    background: #2B9FC9;
+    height: 30px;
+    color: white;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    font-size: calc(3px + 2vmin);
+    font-weight: 600;
+  }
+  .cuadro header text{
+    margin-top: 5px;
+    flex-wrap: wrap;
+  }
+  .Insesion{
+    margin-left: 5px; 
+    margin-top: 10px;
+    color: #2686BD;
+    font-size: calc(4px + 3vmin);
+  }
+  
+  .TipoDocumento {
+    
+    margin-left: -165px; 
+    margin-top: 35px;
+    margin-bottom: 5px;
+  }
+  
+  .menutipodocumento{
+    margin-left: 10px;
+    width: 325px;
+    height: 30px;
+    margin-top: -100px;
+  }
+  .numerodocumento{
+    margin-left: -135px; 
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .labelnumerodocumento{
+    width: 320px;
+    height: 23px;
+    margin-left: 10px; 
+    margin-top: -200px;
+  }
+  .fechanacimiento{
+    margin-left: -65px; 
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+  .Nombres{
+    margin-left: -195px; 
+    margin-top: 30px;
+    margin-bottom: 5px; 
+  }
+  .Apellidos{
+    margin-left: -175px; 
+    margin-top: 30px;
+    margin-bottom: 5px; 
+  }
+  .Crearcontraseña{
+    margin-left: -180px; 
+    margin-top: 30px;
+    margin-bottom: 5px; 
+  }
+  .Correo{
+    margin-left: -170px; 
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+  .Confircontraseña{
+    margin-left: -150px; 
+    margin-top: 30px;
+    margin-bottom: 5px;  
+  }
+  .confirmacorreo{
+    margin-left: -90px; 
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+  .labelcontraseña{
+    width: 320px;
+    height: 23px;
+    margin-left: 10px; 
+    margin-top: -200px;
+  }
+  .recordardatos{
+    display: flex;
+    align-items:center;
+    justify-content:left;
+    padding: 20px;
+   
+  }
+  .recordardatos input{
+    height: 20px;
+    width: 20px;
+    margin: 0 auto;
+    margin-left: 53px;
+  }
+  .textorecordatos{
+    margin-top: -43px;
+    margin-left: -25px;
+    color: #2686BD;
+  }
+  .textoverificarcaptcha {
+    margin-top: 30px;
+    margin-left: -180px;
+  }
+  .verificarcaptcha{
+    background: #d8dadb;
+    width: 325px;
+    height: 60px;
+   margin-left: 10px; 
+  }
+  
+  .verificarcaptcha input{
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: -250px;
+  }
+  .verificarcaptcha1{
+    margin-top: -23px;
+    margin-left: -100px;
+  }
+  
+ 
+  .imagencaptcha{
+    display: flex;
+     align-items:flex-end;
+    justify-content:right;
+  }
+  .imagencaptcha img {
+    width: 40px;
+    height: 40px;
+    margin-top: -50px;
+   /*margin-top: -180px;*/
+   /*margin-left: -40px;*/
+    margin-right: 40px;
+   margin-bottom: -10px;
+  } 
+  .boton4 {
+    
+    width: 325px;
+    height: 40px;
+    margin-left: 5px;
+    border-radius: 15px;
+    margin-top: 50px;
+    background: #2686BD;
+    mix-blend-mode: normal;
+    border:#ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(5px + 2vmin);
+    color: white;
+    font-family: 'Arial';
+    font-style: normal;
+        
+    } 
+  .olvide{
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+ 
+@media (max-width: 700px) {
+    header{
+        display: flex;
+        justify-content:center;
+      }
+      
+    .encabezado{
+        display: flex;
+         align-items: center;
+         justify-content:center; 
+       }
+       
+    .logo{
+     width: 15%;
+     margin-right: -20px;
+    }
+     
+    .nombre{
+     width: 40%;
+     height: auto;
+     margin-top: 5px;
+        
+       }
+    .cuadro{
+        border: 3px solid #2B9FC9;
+        height: auto;
+        width: 80%;
+        margin: 0 auto;
+      }
+    .cuadro header{
+        background: #2B9FC9;
+        height: auto;
+        color: white;
+        flex-wrap: wrap;
+        font-family: sans-serif;
+        font-size: calc(3px + 2vmin);
+        font-weight: 600;
+        
+      }
+    .cuadro header text{
+        margin-top: 5px;
+        flex-wrap: wrap;
+      }
+    .Insesion{
+        margin-left: 5px; 
+        margin-top: 30px;
+        color: #2686BD;
+        font-size: calc(4px + 3vmin);
+      }
+      
+    .TipoDocumento{
+      height: auto;
+      width: 85%;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .TipoDocumento text {
+        font-family: sans-serif;
+        font-size: calc(6px + 1vmin); 
+        margin-top: 30px;
+        margin-bottom: 5px;
+        /*margin-right: 150px;*/
+        /*margin-left: -120px;*/
+      }
+      
+    .menutipodocumento{
+        margin-left: -15px;
+        width: 84%;
+        height: auto;
+        margin-top: -100px;
+      }
+      .numerodocumento{
+      height: auto;
+      width: 85%;
+      margin: 0 auto;
+      text-align: left;
+      margin-top: 30px;
+      }
+      .numerodocumento text{
+        font-family: sans-serif;
+        font-size: calc(6px + 1vmin); 
+        margin-bottom: 20px;
+      }
+      
+    .labelnumerodocumento{
+      margin-left: -15px;
+      width: 82%;
+      height: auto;
+      margin-top: 5px;
+
+      }
+      .fechanacimiento{
+      height: auto;
+      width: 85%;
+      margin: 0 auto;
+      text-align: left;
+      margin-top: 30px;
+      }
+      .fechanacimiento text{
+        font-family: sans-serif;
+        font-size: calc(6px + 1vmin); 
+        margin-bottom: 20px;
+      }
+      .Nombres{
+        height: auto;
+        width: 85%;
+        margin: 0 auto;
+        text-align: left;
+        margin-top: 30px;
+      }
+      .Nombres text{
+        font-family: sans-serif;
+        font-size: calc(6px + 1vmin); 
+        margin-top: 30px;
+        margin-bottom: 5px; 
+      }
+      .Apellidos{
+        height: auto;
+        width: 85%;
+        margin: 0 auto;
+        text-align: left;
+        margin-top: 30px;
+      } 
+      .Apellidos text{
+        font-family: sans-serif;
+        font-size: calc(6px + 1vmin); 
+        margin-top: 30px;
+        margin-bottom: 5px;
+      }
+    .Crearcontraseña{
+      height: auto;
+      width: 85%;
+      margin: 0 auto;
+      text-align: left;
+      margin-top: 30px;
+    }
+    .Crearcontraseña text{
+      font-family: sans-serif;
+      font-size: calc(6px + 1vmin); 
+      margin-top: 30px;
+      margin-bottom: 5px;
+    }
+    .Correo{
+      height: auto;
+      width: 85%;
+      margin: 0 auto;
+      text-align: left;
+      margin-top: 30px;
+    }
+    .Correo text{
+      font-family: sans-serif;
+      font-size: calc(6px + 1vmin); 
+      margin-top: 30px;
+      margin-bottom: 5px;
+    }
+    .Confircontraseña{
+      height: auto;
+      width: 85%;
+      margin: 0 auto;
+      text-align: left;
+      margin-top: 30px; 
+    }
+    .Confircontraseña text{
+      font-family: sans-serif;
+      font-size: calc(6px + 1vmin); 
+      margin-top: 30px;
+      margin-bottom: 5px;
+    }
+    .confirmacorreo{
+      height: auto;
+      width: 85%;
+      margin: 0 auto;
+      text-align: left;
+      margin-top: 30px;
+    }
+    .confirmacorreo text{
+      font-family: sans-serif;
+      font-size: calc(6px + 1vmin); 
+      margin-top: 30px;
+      margin-bottom: 5px;
+    }
+    .labelcontraseña{
+      margin-left: -15px;
+      width: 82%;
+      height: auto;
+      margin-top: 5px;
+      }   
+      .textoverificarcaptcha{
+        height: auto;
+        width: 85%;
+        margin: 0 auto;
+        text-align: left;
+        margin-top: 30px;
+      }
+      .textoverificarcaptcha text {
+        font-family: sans-serif;
+        font-size: calc(6px + 1vmin); 
+        margin-top: 30px;
+        margin-bottom: 5px;
+      }
+      .verificarcaptcha{
+        background: #d8dadb;
+        width: 83%;
+        height: auto;
+        margin-left: -15px; 
+        display: flex;
+       }
+  
+      .cuadritocaptcha{
+        display: flex;
+         align-items:center;
+        justify-content:left;
+        padding: 20px;
+      }
+      .cuadritocaptcha input{
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .verificarcaptcha1{
+        height: auto;
+        width: 85%;
+        margin: 0 auto;
+        text-align: left;
+        margin-top: 15px;
+       }
+      .verificarcaptcha1 text{
+        font-family: sans-serif;
+        font-size: calc(4px + 2vmin); 
+        margin-left:0px ;
+        
+      }
+      .imagencaptcha{
+        display: flex;
+         align-items:center;
+        justify-content:right;
+      }
+      .imagencaptcha img {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+      } 
+      .terminos{
+        display: flex;
+      }
+      .recordardatos{
+        display: flex;
+        align-items:left;
+        justify-content:left;
+       margin-left: 30px;
+      }
+      .recordardatos input{
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px
+      }
+      .textorecordatos{
+        height: auto;
+        width: 85%;
+        margin: 0 auto;
+        text-align: left;
+        margin-top: 15px;
+      }
+      .textorecordatos text{
+        font-family: sans-serif;
+        font-size: calc(4px + 2vmin); 
+        margin-left:-15px;
+        color: #2686BD;
+      }
+      .boton4 {
+    
+        width: 70%;
+        height: auto;
+        margin-left: 2px;
+        border-radius: 15px;
+        margin-top: 20px;
+        background: #2686BD;
+        mix-blend-mode: normal;
+        border:#ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(5px + 2vmin);
+        color: white;
+        font-family: 'Arial';
+        font-style: normal;
+            
+        } 
+        olvide{
+          margin-top: 10px;
+          margin-left: 15px;
+          font-size: calc(1px + 2vmin);
+        }
+}
